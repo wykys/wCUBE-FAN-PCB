@@ -74,8 +74,8 @@ L Device:D_Schottky D1
 U 1 1 5C761A55
 P 3850 2800
 F 0 "D1" V 3804 2879 50  0000 L CNN
-F 1 "SS14" V 3895 2879 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA" H 3850 2800 50  0001 C CNN
+F 1 "SS24" V 3895 2879 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 3850 2800 50  0001 C CNN
 F 3 "~" H 3850 2800 50  0001 C CNN
 	1    3850 2800
 	0    1    1    0   
@@ -265,8 +265,8 @@ L Device:D_Schottky D2
 U 1 1 5C792323
 P 3850 4800
 F 0 "D2" V 3804 4879 50  0000 L CNN
-F 1 "SS14" V 3895 4879 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA" H 3850 4800 50  0001 C CNN
+F 1 "SS24" V 3895 4879 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 3850 4800 50  0001 C CNN
 F 3 "~" H 3850 4800 50  0001 C CNN
 	1    3850 4800
 	0    1    1    0   
@@ -431,8 +431,8 @@ L Device:D_Schottky D3
 U 1 1 5C79A72D
 P 4350 6800
 F 0 "D3" V 4304 6879 50  0000 L CNN
-F 1 "SS14" V 4395 6879 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA" H 4350 6800 50  0001 C CNN
+F 1 "SS24" V 4395 6879 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 4350 6800 50  0001 C CNN
 F 3 "~" H 4350 6800 50  0001 C CNN
 	1    4350 6800
 	0    1    1    0   
@@ -544,18 +544,14 @@ $EndComp
 $Comp
 L Device:R R10
 U 1 1 5C777A36
-P 8550 4000
-F 0 "R10" H 8620 4046 50  0000 L CNN
-F 1 "100k" H 8620 3955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.50mm_HandSolder" V 8480 4000 50  0001 C CNN
-F 3 "~" H 8550 4000 50  0001 C CNN
-	1    8550 4000
+P 8000 4900
+F 0 "R10" H 8070 4946 50  0000 L CNN
+F 1 "100k" H 8070 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.50mm_HandSolder" V 7930 4900 50  0001 C CNN
+F 3 "~" H 8000 4900 50  0001 C CNN
+	1    8000 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8050 5100 7800 5100
-Wire Wire Line
-	8050 5200 7700 5200
 $Comp
 L Device:POT_TRIM RV1
 U 1 1 5C77B79F
@@ -578,12 +574,12 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e
 	1    9550 2050
 	1    0    0    -1  
 $EndComp
-Text Label 1150 2800 0    40   ~ 6
+Text Label 1150 2800 0    40   ~ 8
 PWM_HOT_END
 Connection ~ 1700 2800
-Text Label 1150 4800 0    40   ~ 6
+Text Label 1150 4800 0    40   ~ 8
 PWM_HEAD
-Text Label 1150 6800 0    40   ~ 6
+Text Label 1150 6800 0    40   ~ 8
 PWM_BOX
 $Comp
 L Connector_Generic:Conn_01x02 J3
@@ -601,8 +597,8 @@ L Device:D_Schottky D4
 U 1 1 5C788470
 P 8000 2050
 F 0 "D4" H 8000 1834 50  0000 C CNN
-F 1 "SS14" H 8000 1925 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" H 8000 2050 50  0001 C CNN
+F 1 "SS24" H 8000 1925 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 8000 2050 50  0001 C CNN
 F 3 "~" H 8000 2050 50  0001 C CNN
 	1    8000 2050
 	-1   0    0    1   
@@ -820,28 +816,26 @@ Wire Wire Line
 	10100 5100 10100 5200
 Wire Wire Line
 	8050 5600 8000 5600
-Wire Wire Line
-	8000 5600 8000 4850
 $Comp
 L KLIB_Power:+5V #PWR028
 U 1 1 5C7D270B
-P 8550 3850
-F 0 "#PWR028" H 8550 3550 50  0001 C CNN
-F 1 "+5V" H 8555 4023 50  0000 C CNN
-F 2 "" H 8550 3850 50  0001 C CNN
-F 3 "" H 8550 3850 50  0001 C CNN
-	1    8550 3850
+P 8000 4750
+F 0 "#PWR028" H 8000 4450 50  0001 C CNN
+F 1 "+5V" H 8005 4923 50  0000 C CNN
+F 2 "" H 8000 4750 50  0001 C CNN
+F 3 "" H 8000 4750 50  0001 C CNN
+	1    8000 4750
 	1    0    0    -1  
 $EndComp
-Text Label 7250 5300 0    40   ~ 6
+Text Label 7250 5300 0    40   ~ 8
 ON_~OFF
-Text Label 7250 5100 0    40   ~ 6
+Text Label 7250 5200 0    40   ~ 8
 PWM_HEAD
-Text Label 7250 5200 0    40   ~ 6
+Text Label 7250 5100 0    40   ~ 8
 PWM_BOX
-Text Label 7250 5400 0    40   ~ 6
+Text Label 7250 5400 0    40   ~ 8
 ADC_HEAD
-Text Label 7250 5500 0    40   ~ 6
+Text Label 7250 5500 0    40   ~ 8
 ADC_BOX
 $Comp
 L KLIB_Power:+5V #PWR018
@@ -1009,28 +1003,6 @@ F 3 "~" H 5975 7425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KLIB_Mechanical:Bolt H3
-U 1 1 5C833E86
-P 6200 7500
-F 0 "H3" H 6305 7571 50  0000 L CNN
-F 1 "M3" H 6305 7480 50  0000 L CNN
-F 2 "KLIB_Mechanical:Bolt_M3" H 6300 7350 50  0001 L CNN
-F 3 "~" H 6325 7425 50  0001 C CNN
-	1    6200 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L KLIB_Mechanical:Bolt H4
-U 1 1 5C8346F0
-P 6550 7500
-F 0 "H4" H 6655 7571 50  0000 L CNN
-F 1 "M3" H 6655 7480 50  0000 L CNN
-F 2 "KLIB_Mechanical:Bolt_M3" H 6650 7350 50  0001 L CNN
-F 3 "~" H 6675 7425 50  0001 C CNN
-	1    6550 7500
-	1    0    0    -1  
-$EndComp
-$Comp
 L KLIB_Logo:Wykys GR1
 U 1 1 5C83F95C
 P 10750 6850
@@ -1052,83 +1024,6 @@ F 3 "~" H 10000 6850 50  0001 C CNN
 	1    10000 6850
 	1    0    0    -1  
 $EndComp
-$Comp
-L KLIB_Connector_Prog:AVR_ISP_02X03 J4
-U 1 1 5C844B37
-P 9700 4300
-F 0 "J4" H 9700 4667 50  0000 C CNN
-F 1 "AVR_ISP_02X03" H 9700 4576 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" H 9700 3950 50  0001 C CNN
-F 3 "~" H 10350 3850 50  0001 C CNN
-	1    9700 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8000 4850 8550 4850
-Wire Wire Line
-	8550 4850 8550 4400
-Wire Wire Line
-	8550 4400 9300 4400
-Wire Wire Line
-	10100 4300 10250 4300
-Wire Wire Line
-	10250 4300 10250 4650
-Wire Wire Line
-	10250 4650 7800 4650
-Wire Wire Line
-	8450 4750 8450 4300
-Wire Wire Line
-	8450 4300 9300 4300
-Wire Wire Line
-	8350 4550 8350 4200
-Wire Wire Line
-	8350 4200 9300 4200
-Wire Wire Line
-	7900 5300 7900 4750
-Connection ~ 7900 5300
-Wire Wire Line
-	7900 5300 8050 5300
-Wire Wire Line
-	7900 4750 8450 4750
-Wire Wire Line
-	7050 5300 7900 5300
-Wire Wire Line
-	7800 5100 7800 4650
-Connection ~ 7800 5100
-Wire Wire Line
-	7250 5100 7800 5100
-Wire Wire Line
-	7700 5200 7700 4550
-Connection ~ 7700 5200
-Wire Wire Line
-	7700 4550 8350 4550
-Wire Wire Line
-	7250 5200 7700 5200
-$Comp
-L KLIB_Power:GND #PWR034
-U 1 1 5C8BCF19
-P 10100 4400
-F 0 "#PWR034" H 10100 4200 50  0001 C CNN
-F 1 "GND" H 10105 4227 50  0000 C CNN
-F 2 "" H 10100 4400 50  0001 C CNN
-F 3 "" H 10100 4400 50  0001 C CNN
-	1    10100 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L KLIB_Power:+5V #PWR033
-U 1 1 5C8C3C23
-P 10100 4200
-F 0 "#PWR033" H 10100 3900 50  0001 C CNN
-F 1 "+5V" H 10105 4373 50  0000 C CNN
-F 2 "" H 10100 4200 50  0001 C CNN
-F 3 "" H 10100 4200 50  0001 C CNN
-	1    10100 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8550 4400 8550 4150
-Connection ~ 8550 4400
 Wire Notes Line
 	5000 7700 5000 600 
 Wire Notes Line
@@ -1179,4 +1074,12 @@ F 3 "" H 3850 7200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3850 7200 3850 7050
+Wire Wire Line
+	7250 5200 8050 5200
+Wire Wire Line
+	7250 5100 8050 5100
+Wire Wire Line
+	7050 5300 8050 5300
+Wire Wire Line
+	8000 5050 8000 5600
 $EndSCHEMATC
