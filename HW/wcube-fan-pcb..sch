@@ -833,9 +833,9 @@ Text Label 7250 5200 0    40   ~ 8
 PWM_HEAD
 Text Label 7250 5100 0    40   ~ 8
 PWM_BOX
-Text Label 7250 5400 0    40   ~ 8
-ADC_HEAD
 Text Label 7250 5500 0    40   ~ 8
+ADC_HEAD
+Text Label 7250 5400 0    40   ~ 8
 ADC_BOX
 $Comp
 L KLIB_Power:+5V #PWR018
